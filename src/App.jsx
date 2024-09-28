@@ -38,7 +38,8 @@ const touristPlaces = [
 function App(){
   return (
     <>
-      <div className="mt-5 flex flex-col mx-auto w-[700px] gap-5" >
+      <div className="mx-auto w-full text-center text-2xl font-bold p-4 fixed bg-black text-white  top-0 z-30">Tourist Places</div>
+      <div className="mt-20 flex flex-col mx-auto w-[700px] gap-5 relative z-0" >
         {
           touristPlaces.map(tourist => {
             return <TouristPlace place={tourist.placeName} img={tourist.img} desc={tourist.desc} price={tourist.price} visit={tourist.whenToVisit}></TouristPlace>
